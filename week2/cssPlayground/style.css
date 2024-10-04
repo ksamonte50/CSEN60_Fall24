@@ -8,8 +8,26 @@ Order or Precedence:
 Caveat: "!important" will override any precedence
 
 */
+html {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1c87c9;
+  }
 
 p {
     color: purple;
-    background-color: orange;
+    line-height: 30px;
+    /* background-color: orange; */
+}
+
+.middleP {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#mainText {
+    line-height: 30px;
 }
