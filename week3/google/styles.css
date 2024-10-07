@@ -17,3 +17,12 @@ header, footer {
     justify-content: space-between;
     align-items: center;
 }
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px; 
+    color: #3c4043;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
