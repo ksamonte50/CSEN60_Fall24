@@ -1,0 +1,19 @@
+/*  Old horizontal layout
+
+li {
+    display: inline;
+} */
+
+ul {
+    display: flex;
+    flex-direction: row;    /* row by default */
+    list-style-type: none;
+    gap: 16px;
+    padding: 0px;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
