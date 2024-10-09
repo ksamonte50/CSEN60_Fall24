@@ -1,7 +1,10 @@
-/*  Old horizontal layout
+/*  
+
+Old horizontal layout:
 
 li {
     display: inline;
+    
 } */
 
 ul {
@@ -25,4 +28,10 @@ button {
     color: #3c4043;
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+
+#climateMessage {
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
