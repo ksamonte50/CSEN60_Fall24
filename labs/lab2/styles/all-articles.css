@@ -18,8 +18,9 @@ input[type="search"] {
 }
 
 article {
-  max-width: 25%;
-  min-width: 10%;
+  flex: 0 0 30%;
+  max-width: 50ch;
+  min-width: 30ch;
   padding: 1rem;
 }
 
