@@ -35,3 +35,22 @@ button {
     gap: 6px;
     align-items: center;
 }
+
+main {
+    text-align: center;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 98vh;
+}
+
+/* body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+} */
