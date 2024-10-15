@@ -65,3 +65,21 @@ nav ul a {
   color: var(--accent-background-text);
   text-decoration: none;
 }
+
+h1 {
+  color: var(--accent-background-text);
+}
+
+.tags li a {
+  text-decoration: none;
+  margin: 0;
+}
+
+time, .secondary {
+  color: var(--darkest-gray);
+  text-decoration: none;
+}
+
+.primary {
+  color: var(--accent-text);
+}

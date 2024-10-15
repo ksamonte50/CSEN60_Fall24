@@ -1,0 +1,56 @@
+body {
+    display: flex;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    min-width: 33vw;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--accent-background);
+}
+
+.profile { 
+    margin: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 1.5rem ;
+}
+
+li a img {
+    width: 40px;
+    height: 40px;
+}
+
+article {
+    padding: 10rem;
+    height: 100%;
+}
+
+figure p {
+    color: var(--accent-background-text);
+}
+
+
+
+
+
+
+
+
+
