@@ -46,7 +46,7 @@ ul.tags a {
 /**
   navigation
 */
-nav {
+.topNav {
   /* background color should be accent-background */
   background-color: var(--accent-background);
 }

@@ -29,7 +29,7 @@ aside{
 }
 
 li {
-    margin: 0 1.5rem ;
+    margin: 0 1rem ;
 }
 
 li a img {
@@ -37,14 +37,20 @@ li a img {
     height: 40px;
 }
 
+figure p {
+    color: var(--accent-background-text);
+}
+
 article {
     padding: 10rem;
     height: 100%;
 }
 
-figure p {
-    color: var(--accent-background-text);
+ul.tags li {
+    color: var(--darkest-gray);
 }
+
+
 
 
 
