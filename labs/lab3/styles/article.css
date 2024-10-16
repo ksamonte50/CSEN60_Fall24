@@ -7,9 +7,14 @@ article {
     margin: 3rem auto;
 }
 
+.highlight {
+    background-color: var(--accent-background);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
+    /* How to insert dots between links? */
 }
 
 .img {
@@ -23,4 +28,15 @@ svg {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+}
+
+#previous-article::after {
+    content: "." ;
+    margin-left: 0.5rem;
+}
+
+#next-article::before {
+    content: "." ;
+    margin-right: 0.5rem;
+    color: var(--accent-text);
 }
