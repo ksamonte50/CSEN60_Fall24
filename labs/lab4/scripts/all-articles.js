@@ -6,7 +6,14 @@ let parentElement = null;
 const tagLists = Array.from(document.querySelectorAll("article .tags"));
 
 // Search Functions
-
+/**
+ * initializeSearch() sets up the search funcationality
+ * takes DOM element that will contain all searched tags as parameter
+ * creates new object from query string (URL after "?")
+ * if newParentElement is null, logs an error
+ * else, sets parentElement to newParentElement and retrieves all "tag" search parameters
+ * iterates through each tags and calls addSearchTerm
+ */
 function initializeSearch(newParentElement) {
   const params = new URLSearchParams(window.location.search);
   if (newParentElement === null) {
@@ -23,7 +30,11 @@ function initializeSearch(newParentElement) {
   }
 }
 
-
+/**
+ * hideArticles: hides articles that do not have a given tag
+ * if there are no search tags (searchTags is empty), then every article will be shown
+ * else creates new array (articlesWithTags) and adds all articles with given tag
+ */
 function hideArticles() {
   if (searchTags.length === 0) {
     for (const article of document.querySelectorAll("article")) {
@@ -46,10 +57,13 @@ function hideArticles() {
    */
   // write your code here
   const articles = document.querySelectorAll("article");
-  for (let i = 0; i < articles.length; i++) {
-    
+  for (let article of articles) {
+    if (!articlesWithTags.includes(article)) {
+      article.classList.add("hidden");
+    } else {
+      article.classList.remove("hidden");
+    }
   }
-
 }
 
 /**
@@ -64,6 +78,9 @@ function createTag(text) {
    * set the button's textContent property to text (the passed in argument)
    */
   // write your code here
+  let button = document.createElement("button");
+  button.classList.add("tag");
+  button.textContent = text;
 
   function remove() {
     button.remove();
@@ -80,6 +97,8 @@ function createTag(text) {
    * return the button element 
    */
   // write your code here
+  button.addEventListener("click", remove);
+  return button;
 }
 
 function findArticlesWithTag(phrase) {
@@ -115,6 +134,10 @@ function onSearch(event) {
    * set input value to an empty string
    */
   // write your code here
+  if (event.key == "Enter") {
+    addSearchTerm(input.value);
+    input.value = "";
+  }
 }
 
 // Main function
