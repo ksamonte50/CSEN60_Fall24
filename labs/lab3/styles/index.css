@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    min-width: 33vw;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--accent-background);
+}
+
+.profile { 
+    margin: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 0 1rem ;
+}
+
+li a img {
+    width: 40px;
+    height: 40px;
+}
+
+figure p {
+    color: var(--accent-background-text);
+}
+
+article {
+    padding: 10rem;
+    height: 100%;
+}
+
+ul.tags li {
+    color: var(--darkest-gray);
+}
+
+
+
+
+
+
+
+
+
+
+

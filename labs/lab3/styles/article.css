@@ -1,0 +1,42 @@
+a {
+    margin-left: 1rem;
+}
+
+article {
+    max-width: 40%;
+    margin: 3rem auto;
+}
+
+.highlight {
+    background-color: var(--accent-background);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    /* How to insert dots between links? */
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 15%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#previous-article::after {
+    content: "." ;
+    margin-left: 0.5rem;
+}
+
+#next-article::before {
+    content: "." ;
+    margin-right: 0.5rem;
+    color: var(--accent-text);
+}
