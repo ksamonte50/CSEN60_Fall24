@@ -7,10 +7,10 @@ const tagLists = Array.from(document.querySelectorAll("article .tags"));
 
 // Search Functions
 /**
- * initializeSearch() sets up the search funcationality
- * takes DOM element that will contain all searched tags as parameter
- * creates new object from query string (URL after "?")
- * if newParentElement is null, logs an error
+ * initializeSearch() sets up the article search by tag funcationality at the beginning of the main function.
+ * 
+ * The function takes the DOM element (newParentElement) that will contain all searched tags as parameter.
+ * Then, it creates new object from the query string (URL after "?"). If paramenter newParentElement is null, logs an error
  * else, sets parentElement to newParentElement and retrieves all "tag" search parameters
  * iterates through each tags and calls addSearchTerm
  */
