@@ -21,3 +21,18 @@
 - Cookie - name/value pair created by website to store information
 - Privacy Policy/TOS - statement saying what website does with any information it collects
     - "Implied Agreement"
+    - Legally binding
+    - Specifies who owns the information/data
+- If you're using something free, most of the time you are the product
+- Mobile OS subtly asks for data
+    - contacts = "Find you friends on (social media)"
+- Data gets a bad wrap, still strong to have as a web developer
+    - Recommendations
+    - Driving a metric (behavior optimize)
+- Sensitive Info
+    - Personally identifiable information - PII
+        - Name, address, phone, email, demographics
+    - Financial info
+    - Legally sensitive (i.e. HIPPA and FERPA)
+- Developers have legal responsibilities for privacy and breaches of policy
+- GDPR and CCPA - government regulations on data privacy
